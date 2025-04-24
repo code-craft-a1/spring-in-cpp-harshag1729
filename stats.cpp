@@ -2,7 +2,7 @@
 #include <limits>
 #include <algorithm>
 
-Stats Statistics::ComputeStatistics(const std::vector<double>& params) {
+Statistics::Stats Statistics::ComputeStatistics(const std::vector<double>& params) {
     if (params.empty()) {
         double nan = std::numeric_limits<double>::quiet_NaN();
         return Statistics::Stats(nan, nan, nan);
